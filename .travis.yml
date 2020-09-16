@@ -14,3 +14,7 @@ install:
 
 scripts:
   - node test
+
+notifications:
+  email:
+    - 1157710763@qq.com
