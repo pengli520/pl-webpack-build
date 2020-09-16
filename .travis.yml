@@ -18,6 +18,13 @@ scripts:
 notifications:
   email:
     - 1157710763@qq.com
-  webhooks: 
-    - https://oapi.dingtalk.com/robot/send?access_token=1a6e351e35fc4b9690abcbc4ba48f388fa2b878bc0c8052d7813c81c214ea874
   
+notifications:
+  webhooks:
+    urls:
+      - https://oapi.dingtalk.com/robot/send?access_token=1a6e351e35fc4b9690abcbc4ba48f388fa2b878bc0c8052d7813c81c214ea874
+    on_success: change # default: always
+    on_failure: always # default: always
+    on_start:   change # default: never
+    on_cancel:  always # default: always
+    on_error:   always # default: always
