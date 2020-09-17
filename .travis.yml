@@ -22,7 +22,7 @@ scripts:
 notifications:
   webhooks:
     urls:
-      - http://10.10.3.66:8001
+      - http://2v8wmt.natappfree.cc/
     on_success: change # default: always
     on_failure: always # default: always
     on_start:   change # default: never
