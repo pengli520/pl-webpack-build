@@ -16,4 +16,5 @@ scripts:
   - node test
 
 notifications:
-  webhooks: https://oapi.dingtalk.com/robot/send?access_token=1a6e351e35fc4b9690abcbc4ba48f388fa2b878bc0c8052d7813c81c214ea874
+  # webhooks: https://oapi.dingtalk.com/robot/send?access_token=1a6e351e35fc4b9690abcbc4ba48f388fa2b878bc0c8052d7813c81c214ea874
+  webhooks: http://10.10.3.66:8001
