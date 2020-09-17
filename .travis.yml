@@ -17,8 +17,4 @@ scripts:
 
 notifications:
   webhooks:
-    - https://oapi.dingtalk.com/robot/send?access_token=1a6e351e35fc4b9690abcbc4ba48f388fa2b878bc0c8052d7813c81c214ea874
-    template:
-      - "%{repository_slug}#%{build_number} (%{branch} - %{commit} : %{author}): %{message}"
-      - "Change view : %{compare_url}"
-      - "Build details : %{build_url}"
+    - https://oapi.dingtalk.com/robot/send?access_token=0b8586cbbd556cd1691c9915cf6b48071abd4834fafae53ba06e28ea059468c8
