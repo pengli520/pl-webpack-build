@@ -16,4 +16,4 @@ scripts:
   - node test
 
 notifications:
-  webhooks:  http://vrgh6x.natappfree.cc
+  webhooks:  http://vrgh6x.natappfree.cc/travis
