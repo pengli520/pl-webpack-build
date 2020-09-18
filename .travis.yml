@@ -16,4 +16,6 @@ scripts:
   - node test
 
 notifications:
-  webhooks: http://z4i6te.natappfree.cc/travis
+  webhooks: 
+    - http://z4i6te.natappfree.cc/travis
+    - https://oapi.dingtalk.com/robot/send?access_token=1a6e351e35fc4b9690abcbc4ba48f388fa2b878bc0c8052d7813c81c214ea874
