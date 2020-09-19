@@ -16,4 +16,4 @@ scripts:
   - node test
 
 notifications:
-  webhooks:  http://axxkea.natappfree.cc/travis
+  webhooks:  http://iuubc3.natappfree.cc/travis
