@@ -16,4 +16,13 @@ scripts:
   - node test
 
 notifications:
-  webhooks:  http://iuubc3.natappfree.cc/travis
+  webhooks:  http://nimunj.natappfree.cc/travis
+
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $Travis_token # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
