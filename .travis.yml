@@ -19,10 +19,23 @@ notifications:
   webhooks:  http://nimunj.natappfree.cc/travis
 
 
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $Travis_token # Set in the settings page of your repository, as a secure variable
-  keep_history: true
-  on:
-    branch: master
+# deploy:
+#   provider: pages
+#   skip_cleanup: true
+#   github_token: $Travis_token # Set in the settings page of your repository, as a secure variable
+#   keep_history: true
+#   on:
+#     branch: master
+
+after_success:
+  - cd ./dist
+  - git init
+  # - git config --global user.name "${U_NAME}"
+  # - git config --global user.email "${U_EMAIL}"
+  - git add .
+  - git commit -m "Automatically update from travis-ci"
+  - git push --quiet --force  "https://${Travis_token}@${GH_REF}" master:${P_BRANCH}
+
+branches:
+  only:
+    - master
