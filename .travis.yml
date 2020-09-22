@@ -32,7 +32,7 @@ after_success:
   - cd ./dist
   - git init
   # - git config --global user.name "${U_NAME}"
-  # - git config --global user.email "${U_EMAIL}"
+  # - git config --global user.email "${U_EMAIL}" 
   - git add .
   - git commit -m "Automatically update from travis-ci"
   - git push --quiet --force  "${gitee_token}@${gitee_REF}" master:${P_BRANCH}
