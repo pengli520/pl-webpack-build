@@ -36,6 +36,6 @@ after_success:
   - git commit -m "Automatically update from travis-ci"
   - git push --quiet --force master master:${P_BRANCH}/${gitee_token}@${gitee_ssh} 
 
-branches:
-  only:
-    - master
+# branches:
+#   only:
+#     - master
