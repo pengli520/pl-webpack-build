@@ -34,7 +34,7 @@ after_success:
   # - git config --global user.email "${U_EMAIL}"
   - git add .
   - git commit -m "Automatically update from travis-ci"
-  - git push --quiet --force  master:${P_BRANCH}/${gitee_token}@${gitee_ssh} 
+  - git push --quiet --force master master:${P_BRANCH}/${gitee_token}@${gitee_ssh} 
 
 branches:
   only:
