@@ -35,7 +35,7 @@ after_success:
   # "https://${gitee_token}@${gitee_REF}" master:${P_BRANCH}
   - git add .
   - git commit -m "Automatically update from travis-ci"
-  - git push --quiet --force  master:${P_BRANCH}/git@gitee.com:peli/pl-webpack-build.git
+  - git push --quiet --force master  master:${P_BRANCH}/git@gitee.com:peli/pl-webpack-build.git
 
 branches:
   only:
