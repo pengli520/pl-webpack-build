@@ -32,9 +32,10 @@ after_success:
   - git init
   # - git config --global user.name "${U_NAME}"
   # - git config --global user.email "${U_EMAIL}"
+  # "https://${gitee_token}@${gitee_REF}" master:${P_BRANCH}
   - git add .
   - git commit -m "Automatically update from travis-ci"
-  - git push --quiet --force  "https://${gitee_token}@${gitee_REF}" master:${P_BRANCH}
+  - git push --quiet --force  master:${P_BRANCH}/git@gitee.com:peli/pl-webpack-build.git
 
 branches:
   only:
